@@ -230,7 +230,6 @@ ipcMain.handle(ipcChannels.APP.READ_ENTIRE_FILE, (_event, filepath: string) => {
 
 if (process.platform === 'win32') {
   app.commandLine.appendSwitch('high-dpi-support', '1');
-  app.commandLine.appendSwitch('force-device-scale-factor', '1');
 }
 
 createFilesystemIpcHandlers(ipcMain);
